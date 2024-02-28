@@ -24,7 +24,7 @@ Before you begin, ensure your system has the following:
 2. **Make the Script Executable**:
 
     ```bash
-    chmod +x check_chainweb_service.sh
+    chmod +x service-check.sh
     ```
 
 3. **Configure Environment Variables**: The script uses two environment variables:
@@ -40,7 +40,7 @@ Before you begin, ensure your system has the following:
 To manually run the script:
 
 ```bash
-./check_chainweb_service.sh
+./service-check.sh
 ```
 
 This will check the status of your Chainweb node and restart the service if it's not running.
@@ -58,7 +58,7 @@ To ensure your Chainweb node is always operational, you can schedule the script 
 2. Add a line to run the script every 10 minutes:
 
     ```cron
-    */10 * * * * /path/to/check_chainweb_service.sh
+    */10 * * * * /path/to/service-check.sh
     ```
 
     Replace `/path/to/` with the actual directory path where your script is located.
